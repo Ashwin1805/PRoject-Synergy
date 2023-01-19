@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Int_TV1"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:text="Hello,"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <TextView
+        android:id="@+id/Int_TV2"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:text="You are"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Int_TV1"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <EditText
+        android:id="@+id/Int_ET1"
+        android:layout_width="365dp"
+        android:layout_height="50dp"
+        android:hint="Enter Your First Name"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Int_TV2"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <EditText
+        android:id="@+id/Int_ET2"
+        android:layout_width="365dp"
+        android:layout_height="50dp"
+        android:hint="Enter Your Last Name"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Int_ET1"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/Int_TV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="and You were born on"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Int_ET2"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <EditText
+        android:id="@+id/Int_ET_DD"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:hint="DD"
+        android:textSize="25dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:digits="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Int_TV3"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <EditText
+        android:id="@+id/Int_ET_MM"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:hint="MM"
+        android:textSize="25dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:digits="1,2,3,4,5,6,7,8,9,10,11,12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toEndOf="@+id/Int_ET_DD"
+        app:layout_constraintTop_toBottomOf="@+id/Int_TV3"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <EditText
+        android:id="@+id/Int_ET_YY"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:hint="YYYY"
+        android:textSize="25dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:digits="1,2,3,4,5,6,7,8,9,0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toEndOf="@+id/Int_ET_MM"
+        app:layout_constraintTop_toBottomOf="@+id/Int_TV3"
+        app:layout_constraintVertical_bias="0.037" />
+
+
+    <TextView
+        android:id="@+id/Int_Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your Number"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Int_enter_Phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Int_ET_MM"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <EditText
+        android:id="@+id/Int_enter_Phone"
+        android:layout_width="365dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Int_ET_MM" />
+
+    <Button
+        android:id="@+id/Int_Butt2"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/Int_enter_Phone"
+        app:layout_constraintVertical_bias="0.775" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
