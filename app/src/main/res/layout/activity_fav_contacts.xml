@@ -8,7 +8,7 @@
     android:background="@color/black">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/TV3_intro1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/Back_butt"
+        android:id="@+id/IBut3_back"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginEnd="36dp"
@@ -33,30 +33,31 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageButton
-        android:id="@+id/Con_Add"
+        android:id="@+id/IBut3_add"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginBottom="480dp"
         android:background="@color/black"
         android:scaleType="centerCrop"
         android:src="@drawable/add"
-        app:layout_constraintBottom_toTopOf="@+id/Back_butt"
+        app:layout_constraintBottom_toTopOf="@+id/IBut3_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toEndOf="@+id/Contact" />
+        app:layout_constraintStart_toEndOf="@+id/ET3_contact" />
 
     <EditText
-        android:id="@+id/Contact"
+        android:id="@+id/ET3_contact"
         android:layout_width="275dp"
         android:layout_height="47dp"
         android:layout_marginTop="24dp"
         android:background="@color/white"
         android:hint="add contacts"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/Back_butt"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/IBut3_back"
+        app:layout_constraintTop_toBottomOf="@+id/TV3_intro1"
         app:layout_constraintVertical_bias="0.016"
-        tools:layout_editor_absoluteX="31dp" />
+        tools:layout_editor_absoluteX="31dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

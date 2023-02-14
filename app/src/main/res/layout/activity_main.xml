@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/Int_TV1"
+        android:id="@+id/TV1_hello"
         android:layout_width="120dp"
         android:layout_height="38dp"
         android:text="Hello,"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.041" />
 
     <TextView
-        android:id="@+id/Int_TV2"
+        android:id="@+id/TV1_U_R"
         android:layout_width="120dp"
         android:layout_height="38dp"
         android:text="You are"
@@ -34,11 +34,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Int_TV1"
+        app:layout_constraintTop_toBottomOf="@+id/TV1_hello"
         app:layout_constraintVertical_bias="0.022" />
 
     <EditText
-        android:id="@+id/Int_ET1"
+        android:id="@+id/ET1_FN"
         android:layout_width="365dp"
         android:layout_height="50dp"
         android:hint="Enter Your First Name"
@@ -50,11 +50,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Int_TV2"
+        app:layout_constraintTop_toBottomOf="@+id/TV1_U_R"
         app:layout_constraintVertical_bias="0.029" />
 
     <EditText
-        android:id="@+id/Int_ET2"
+        android:id="@+id/ET1_LN"
         android:layout_width="365dp"
         android:layout_height="50dp"
         android:hint="Enter Your Last Name"
@@ -66,11 +66,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Int_ET1"
+        app:layout_constraintTop_toBottomOf="@+id/ET1_FN"
         app:layout_constraintVertical_bias="0.04" />
 
     <TextView
-        android:id="@+id/Int_TV3"
+        android:id="@+id/TV1_DOB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="and You were born on"
@@ -81,11 +81,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Int_ET2"
+        app:layout_constraintTop_toBottomOf="@+id/ET1_LN"
         app:layout_constraintVertical_bias="0.043" />
 
     <EditText
-        android:id="@+id/Int_ET_DD"
+        android:id="@+id/ET1_DD"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:hint="DD"
@@ -97,11 +97,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Int_TV3"
+        app:layout_constraintTop_toBottomOf="@+id/TV1_DOB"
         app:layout_constraintVertical_bias="0.037" />
 
     <EditText
-        android:id="@+id/Int_ET_MM"
+        android:id="@+id/ET1_MM"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:hint="MM"
@@ -112,12 +112,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.093"
-        app:layout_constraintStart_toEndOf="@+id/Int_ET_DD"
-        app:layout_constraintTop_toBottomOf="@+id/Int_TV3"
+        app:layout_constraintStart_toEndOf="@+id/ET1_DD"
+        app:layout_constraintTop_toBottomOf="@+id/TV1_DOB"
         app:layout_constraintVertical_bias="0.037" />
 
     <EditText
-        android:id="@+id/Int_ET_YY"
+        android:id="@+id/ET1_YY"
         android:layout_width="125dp"
         android:layout_height="50dp"
         android:hint="YYYY"
@@ -128,39 +128,41 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.408"
-        app:layout_constraintStart_toEndOf="@+id/Int_ET_MM"
-        app:layout_constraintTop_toBottomOf="@+id/Int_TV3"
+        app:layout_constraintStart_toEndOf="@+id/ET1_MM"
+        app:layout_constraintTop_toBottomOf="@+id/TV1_DOB"
         app:layout_constraintVertical_bias="0.037" />
 
 
     <TextView
-        android:id="@+id/Int_Phone"
+        android:id="@+id/TV1_Phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter your Number"
         android:textColor="@color/white"
         android:textSize="25dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/Int_enter_Phone"
+        app:layout_constraintBottom_toTopOf="@+id/ET1_Phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Int_ET_MM"
+        app:layout_constraintTop_toBottomOf="@+id/ET1_MM"
         app:layout_constraintVertical_bias="0.43" />
 
     <EditText
-        android:id="@+id/Int_enter_Phone"
+        android:id="@+id/ET1_Phone"
         android:layout_width="365dp"
         android:layout_height="50dp"
         android:layout_marginTop="76dp"
+        android:inputType="number"
+        android:digits="1234567890"
         android:background="@color/white"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Int_ET_MM" />
+        app:layout_constraintTop_toBottomOf="@+id/ET1_MM" />
 
     <Button
-        android:id="@+id/Int_Butt2"
+        android:id="@+id/But1_nxt"
         android:layout_width="165dp"
         android:layout_height="50dp"
         android:text="Next"
@@ -170,8 +172,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/Int_enter_Phone"
+        app:layout_constraintTop_toBottomOf="@+id/ET1_Phone"
         app:layout_constraintVertical_bias="0.775" />
 
 

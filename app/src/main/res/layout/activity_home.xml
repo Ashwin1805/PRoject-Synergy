@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/home_Intro"
+        android:id="@+id/TV2_Intro1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/home_Intro2"
+        android:id="@+id/TV2_Intro2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -32,10 +32,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_Intro" />
+        app:layout_constraintTop_toBottomOf="@+id/TV2_Intro1" />
 
     <TextView
-        android:id="@+id/home_Intro3"
+        android:id="@+id/TV2_Intro3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -45,10 +45,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_Intro2" />
+        app:layout_constraintTop_toBottomOf="@+id/TV2_Intro2" />
 
     <TextView
-        android:id="@+id/home_Intro4"
+        android:id="@+id/TV2_Intro4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -58,10 +58,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.291"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_Intro3" />
+        app:layout_constraintTop_toBottomOf="@+id/TV2_Intro3" />
 
     <ImageButton
-        android:id="@+id/RED_Button"
+        android:id="@+id/IBut2_Help"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginTop="100dp"
@@ -72,11 +72,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_Intro4"
+        app:layout_constraintTop_toBottomOf="@+id/TV2_Intro4"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
-        android:id="@+id/Con_Add"
+        android:id="@+id/IBut2_add"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:background="@color/black"
@@ -85,7 +85,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RED_Button"
+        app:layout_constraintTop_toBottomOf="@+id/IBut2_Help"
         app:layout_constraintVertical_bias="0.508" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
