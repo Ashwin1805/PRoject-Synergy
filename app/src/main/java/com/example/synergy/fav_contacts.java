@@ -23,8 +23,8 @@ public class fav_contacts extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fav_contacts);
 
-        back = findViewById(R.id.Back_butt);
-        add = findViewById(R.id.Con_Add);
+        back = findViewById(R.id.IBut3_back);
+        add = findViewById(R.id.IBut3_add);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

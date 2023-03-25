@@ -31,8 +31,8 @@ public class home extends AppCompatActivity implements OnMapReadyCallback, Googl
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Help = findViewById(R.id.RED_Button);
-        Add = findViewById(R.id.Con_Add);
+        Help = findViewById(R.id.IBut2_Help);
+        Add = findViewById(R.id.IBut2_add);
 
         Help.setOnClickListener(new View.OnClickListener() {
             @Override
