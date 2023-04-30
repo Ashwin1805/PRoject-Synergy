@@ -16,7 +16,7 @@ public class fav_contacts extends AppCompatActivity {
     ImageButton back;
     ImageButton add;
 
-    private static final int RESULT_PICK_CONTACT = 855;
+    private static final int PERMISSIONS_REQUEST_READ_CONTACTS = 100;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
